@@ -17,7 +17,7 @@ import gradio as gr
 logging.basicConfig(filename="key_events.log", level=logging.INFO, format="%(asctime)s - %(message)s")
 
 GROQ_API_URL = os.getenv("GROQ_API_URL", "https://api.groq.com/openai/v1/chat/completions")
-GROQ_API_TOKEN = os.getenv("GROQ_API_TOKEN", "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")
+GROQ_API_TOKEN = os.getenv("GROQ_API_TOKEN", "") #enter your token
 MODEL = "deepseek-r1-distill-llama-70b"
 requests_cache.install_cache("http_cache", expire_after=900, allowable_methods=("GET"))
 
